@@ -267,14 +267,14 @@
     border: 0px solid blue;
     display: flex;
     justify-content: center;
-    background-image: url("C:\Users\hp\Desktop\React Project\my-app\src\blue.jpg");
+    background-image: url("blue.jpg");
     background-size: cover;
 }
 .modiinq{
     border: 0px solid blue;
     display: flex;
     justify-content: center;
-    background-image: url("C:\Users\hp\Desktop\React Project\my-app\src\Signuptodaywalapic.jpg");
+    background-image: url("Signuptodaywalapic.jpg");
     background-size: cover;
 }
 .modin{
