@@ -11,6 +11,22 @@ import { FcHome } from "react-icons/fc";
 import './toy.css';
 import { Table } from 'react-bootstrap';
 import scanf from './cpic/scanf.png';
+import ifelse from './cpic/ifelse.png';
+import ifelse2 from './cpic/ifelse2.png';
+import forloop from './cpic/forloop.png';
+import whileloop from './cpic/whileloop.png';
+import dowhileloop from './cpic/dowhileloop.png';
+import funct from './cpic/funct.png';
+import goto from './cpic/goto.png';
+import swi from './cpic/swi.png';
+import recursion from './cpic/recursion.png';
+import array from './cpic/array.png';
+import pointers from './cpic/pointers.png';
+import union from './cpic/union.png';
+import structure from './cpic/structure.png';
+import stringf from './cpic/stringf.png';
+import headerfunc from './cpic/headerfunc.png';
+
 
 
 const Accordion = styled((props) => (
@@ -89,7 +105,7 @@ export default function C() {
           -a variable is a container (storage area) to hold data. <br />
           -To indicate the storage area, each variable should be given a unique name (identifier). Variable names are just the symbolic representation of a memory location. <br />
           For example: <br />
-          <h6 class="nyapan"> int Score = 90; </h6> <br />
+          <h6 class="nyapan"> int Score = 90; </h6> <br />    
           <h5 class="nya"> Rules for naming a variable </h5> 
           -A variable name can only have letters (both uppercase and lowercase letters), digits and underscore. <br />
           -The first letter of a variable should be either a letter or an underscore. <br />
@@ -173,7 +189,7 @@ export default function C() {
           <Typography>
           In C programming, printf() is one of the main output function. The function sends formatted output to the screen. <br />
           For example, <br /> <br />
-          <h6 class="nyapan">  // Displays the string inside quotations <br />
+          <h6 class="nyapan">Displays the string inside quotations<br />
              printf("C Programming"); <br /> <br />
              Output: <br />
              C Programming
@@ -199,7 +215,7 @@ export default function C() {
           <Typography>
           -In programming, comments are hints that a programmer can add to make their code easier to read and understand. <br />
            -For example, <br />
-           <h6 class="nyapan">    // print Hello World to the screen <br />
+           <h6 class="nyapan">    //print Hello World to the screen <br />
            printf("Hello World"); </h6> <br />
 
            <p className="man">Here, // print Hello World to the screen is a comment in C programming. Comments are completely ignored by C compilers.</p>
@@ -319,7 +335,28 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
+          <h5 class="nya">C if Statement</h5> <br />
+          The syntax of the if statement in C programming is: <br />
+           <img src={ifelse} alt="" /> <br />
+           <h5 class="nya">How if statement works?</h5> <br />
+           The if statement evaluates the test expression inside the parenthesis (). <br />
+           -If the test expression is evaluated to true, statements inside the body of if are executed. <br />
+           -If the test expression is evaluated to false, statements inside the body of if are not executed. <br /> <br />
+           <h5 class="nya"> C if...else Statement</h5> <br />
+           The if statement may have an optional else block. The syntax of the if..else statement is: <br />
+           <img src={ifelse2} alt="" /> <br />
+           <h5 class="nya">How if...else statement works?</h5> <br />
+           If the test expression is evaluated to true, <br />
+           -statements inside the body of if are executed. <br />
+           -statements inside the body of else are skipped from execution. <br />
+           If the test expression is evaluated to false, <br />
+           -statements inside the body of else are executed <br />
+           -statements inside the body of if are skipped from execution. <br />
            
+          
+
+            
+      
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -329,10 +366,23 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+          a loop is used to repeat a block of code until the specified condition is met. <br />
+          C programming has three types of loops: <br />
+          1-for loop <br />
+          2-while loop <br />
+          3-do...while loop <br />
+
+          <h5 class="nya"> for Loop</h5> <br />
+          The syntax of the for loop is: <br />
+          <img src={forloop} alt="" /> <br />
+          How for loop works? <br />
+          -The initialization statement is executed only once.
+Then, the test expression is evaluated. If the test expression is evaluated to false, the for loop is terminated.
+However, if the test expression is evaluated to true, statements inside the body of the for loop are executed, and the update expression is updated.
+Again the test expression is evaluated. <br />
+This process goes on until the test expression is false. When the test expression is false, the loopterminates. <br />
+
+
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -342,10 +392,18 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+          The syntax of the while loop is: <br />
+          <img src={whileloop} alt="" /> <br /> <br />
+          How while loop works? <br />
+          The while loop evaluates the testExpression inside the parentheses ().
+If testExpression is true, statements inside the body of while loop are executed. Then, testExpression is evaluated again.
+The process goes on until testExpression is evaluated to false.
+If testExpression is false, the loop terminates (ends). <br /> <br />
+       <h5 class="nya"> do...while loop</h5> <br /> <br />
+       The do..while loop is similar to the while loop with one important difference. The body of do...while loop is executed at least once. Only then, the test expression is evaluated. <br />
+       The syntax of the do...while loop is: <br />
+       <img src={dowhileloop} alt="" />
+
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -355,10 +413,18 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+          <h5 class="nya">   C break</h5> <br /> <br />
+          The break statement ends the loop immediately when it is encountered. Its syntax is: <br /> <br />
+           break; <br /> <br />
+           The break statement is almost always used with if...else statement inside the loop <br /> <br />
+           <h5 class="nya">   C continue</h5> <br /> <br />
+           The continue statement skips the current iteration of the loop and continues with the next iteration. Its syntax is: <br />
+           continue; <br />
+
+
+          
+
+
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -368,10 +434,14 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+          The switch statement allows us to execute one code block among many alternatives.
+
+You can do the same thing with the if...else..if ladder. However, the syntax of the switch statement is much easier to read and write. <br /> <br />
+       <img src={swi} alt="" /> <br /> <br />
+       How does the switch statement work? <br /> <br />
+       -The expression is evaluated once and compared with the values of each case label. <br />
+       -If there is a match, the corresponding statements after the matching label are executed. For example, if the value of the expression is equal to constant2, statements after case constant2: are executed until break is encountered.
+If there is no match, the default statements are executed. <br />
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -381,10 +451,13 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+          The goto statement allows us to transfer control of the program to the specified label. <br /> <br />
+          Syntax of goto Statement: <br /> <br />
+          <img src={goto} alt="" /> <br />
+          The label is an identifier. When the goto statement is encountered, the control of the program jumps to label: and starts executing the code.
+
+
+
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -394,10 +467,32 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+          A function is a block of code that performs a specific task. <br />
+          Types of function: <br />
+          There are two types of function in C programming: <br />
+          1-Standard library functions <br />
+          2-User-defined functions <br /> <br />
+
+          Standard library functions: <br />
+          The standard library functions are built-in functions in C programming. <br />
+
+          These functions are defined in header files. For example, <br />
+          -The printf() is a standard library function to send formatted output to the screen (display output on the screen). This function is defined in the stdio.h header file. <br />
+          -The sqrt() function calculates the square root of a number. The function is defined in the math.h header file. <br /> <br />  
+          
+          <h5 class="nya">   User-defined function:</h5> <br /> 
+          You can also create functions as per your need. Such functions created by the user are known as user-defined functions. <br />
+          How user-defined function works? <br />
+          <img src={funct} alt="" /> <br /> <br />
+          Note, function names are identifiers and should be unique. <br /> <br />
+          Advantages of user-defined function <br />
+          -The program will be easier to understand, maintain and debug. <br />
+          -Reusable codes that can be used in other programs <br />
+      -A large program can be divided into smaller modules. Hence, a large project can be divided among many programmers. <br />
+
+
+
+
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -407,10 +502,8 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+          A function that calls itself is known as a recursive function. And, this technique is known as recursion. <br />
+          <img src={recursion} alt="" />
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -420,10 +513,21 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+          An array is a variable that can store multiple values. For example, if you want to store 100 integers, you can create an array for it. <br /> <br />
+          int data[100]; <br /> <br />
+
+          How to declare an array? <br />
+          dataType arrayName[arraySize]; <br /> <br />
+
+          Access Array Elements- <br />
+          - You can access elements of an array by indices. <br /> <br />
+          Note: <br />
+          - Arrays have 0 as the first index, not 1. In this example, mark[0] is the first element. <br />
+
+           -If the size of an array is n, to access the last element, the n-1 index is used. <br /> <br />
+           How to initialize an array? <br />
+           <img src={array} alt="" />
+
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -433,10 +537,17 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+          Pointers (pointer variables) are special variables that are used to store addresses rather than values. <br />
+          Pointer Syntax <br /> <br />
+          int* p; <br />
+          Here, we have declared a pointer p of int type. <br /> <br />
+          Assigning addresses to Pointers <br />
+         <img src={pointers} alt="" />
+
+
+
+
+
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -446,10 +557,16 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+          In C programming, a string is a sequence of characters terminated with a null character \0. For example: <br />
+          char c[] = "c string";
+
+
+
+
+
+
+
+
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -459,10 +576,22 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+          -You need to often manipulate strings according to the need of a problem. Most, if not all, of the time string manipulation can be done manually but, this makes programming complex and large.
+
+           -To solve this, C supports a large number of string handling functions in the standard library "string.h".
+
+            -Few commonly used string handling functions are discussed below: <br /> <br />
+            <img src={stringf} alt="" />
+
+
+
+
+
+
+
+
+
+
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -472,10 +601,15 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+          -In C programming, a struct (or structure) is a collection of variables (can be of different types) under a single name. <br /> <br />
+
+Define Structures <br /> 
+-Before you can create structure variables, you need to define its data type. To define a struct, the struct keyword is used. <br /> <br />
+
+
+Syntax of struct <br />
+<img src={structure} alt="" />
+
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -485,10 +619,13 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+           A union is a user-defined type similar to structs in C except for one key difference. <br />
+
+           Structures allocate enough space to store all their members, whereas unions can only hold one member value at a time. <br /> <br />
+
+           How to define a union? <br />
+           We use the union keyword to define unions. Here's an example: <br />
+           <img src={union} alt="" />
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -498,10 +635,27 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+          -In this tutorial, you will learn about file handling in C. You will learn to handle standard I/O in C using fprintf(), fscanf(), fread(), fwrite(), fseek() etc. with the help of examples. <br />
+
+          -A file is a container in computer storage devices used for storing data. <br /> <br />
+          File Operations <br /> <br />
+In C, you can perform four major operations on files, either text or binary: <br />
+
+-Creating a new file <br />
+-Opening an existing file <br />
+-Closing a file <br />
+-Reading from and writing information to a file <br /> <br />
+
+
+
+
+
+
+
+
+
+
+
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -512,10 +666,30 @@ An assignment operator is used for assigning a value to a variable. The most com
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget. Lorem ipsum dolor
-            sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-            sit amet blandit leo lobortis eget.
+          -C Standard library functions or simply C Library functions are inbuilt functions in C programming. <br />
+
+          -The prototype and data definitions of these functions are present in their respective header files. To use these functions we need to include the header file in our program. <br /> <br />
+          Advantages of Using C library functions <br />
+          1. They work <br />
+
+One of the most important reasons you should use library functions is simply because they work. These functions have gone through multiple rigorous testing and are easy to use. <br />
+
+
+2. The functions are optimized for performance <br />
+
+Since, the functions are "standard library" functions, a dedicated group of developers constantly make them better. In the process, they are able to create the most efficient code optimized for maximum performance. <br />
+
+3. It saves considerable development time <br /> <br />
+Library Functions in Different Header Files <br />
+<img src={headerfunc} alt="" />
+
+Since the general functions like printing to a screen, calculating the square root, and many more are already written. You shouldn't worry about creating them once again.
+
+4. The functions are portable
+
+With ever-changing real-world needs, your application is expected to work every time, everywhere. And, these library functions help you in that they do the same thing on every computer.
+
+.
           </Typography>
         </AccordionDetails>
       </Accordion>

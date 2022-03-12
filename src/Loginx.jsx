@@ -3,9 +3,10 @@ import './toy.css';
 import { Button , Form , Col , Row, Container } from 'react-bootstrap';
 
 
+
 export default function Loginx() {
     return (
-      <div>
+      <div className="za">
 
         <br />
         <Container className='rtpv'>
@@ -14,9 +15,9 @@ export default function Loginx() {
          
       </Col>
 
-      <Col sm={6} className="modin">
+      <Col sm={6} className="modin"> 
       <Form>
-        <h5 className="ron">Login</h5> <br />
+        <h5 className="ron">Login</h5> <hr /><br />
         <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
          <Form.Control type="email" placeholder="Enter email"  required/>
@@ -33,17 +34,17 @@ export default function Loginx() {
     <Form.Check type="checkbox" label="Check me out" required />
   </Form.Group>
   <div className="d-grid gap-2">
-  <Button variant="danger" type="submit" className="et" >
+  <Button variant="danger" type="submit" className="et" onClick={() =>alert("You are successfully login :)") }>
+    
     Proceed
   </Button>
    </div> <br/>
     <p className="da"> Not Register Yet? <a href="/signup" className="ett">Sign-Up</a> </p>
 </Form>
    
-      </Col>
+      </Col>  
       </Row>
       </Container>
-      <hr />
 
       </div>
     );

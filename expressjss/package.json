@@ -1,6 +1,7 @@
 {
   "name": "try.js",
   "version": "1.0.0",
+  "start": "node index.js",
   "description": "",
   "main": "try.js",
   "scripts": {
@@ -9,7 +10,10 @@
   "author": "klrahul",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.0",
     "express": "^4.17.1",
-    "hbs": "^4.2.0"
+    "hbs": "^4.2.0",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.4"
   }
 }

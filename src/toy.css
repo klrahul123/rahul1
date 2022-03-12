@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Noto+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
 
 .way{
     text-decoration: none;
@@ -67,9 +66,13 @@
     background-color: black;
     border-bottom: 1px solid white;
 }
+
 .num{
-    color: blue;
+    background-image: linear-gradient(-225deg, #20E2D7 0%, #F9FEA5 100%);
+    color: black;
+    font-family: 'Merriweather', serif;
 }
+
 .bray{
     margin-left: 20px;
 }
@@ -173,7 +176,7 @@
     border: 0px solid black;
     display: flex;
     justify-content: center;
-    background-image: url("C:\Users\hp\Desktop\React Project\my-app\src\blackscreencodewithhand.jpg");
+    background-image: url("C:\Users\hp\Desktop\React Project\my-app\src\headpic.png");
     background-size: cover;
 }
 .modii{
@@ -197,6 +200,16 @@
     justify-content: center ;
     font-family: 'Noto Sans', sans-serif;
     color: blueviolet;
+}
+.baf{
+    display: flex;
+    border: 1px solid grey;
+    height: 40px;
+    flex-wrap: wrap;
+    justify-content: center ;
+    font-family: 'Merriweather', serif;
+    color: black;
+    background-color: white;
 }
 .rpp{
     display: flex;
@@ -226,6 +239,14 @@
     border: 0px solid red;
     justify-content: center;
 }
+.rtpvq{
+    border: 0px solid red;
+    justify-content: center;
+}
+
+.z{
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
 .rubil{
     font-family: 'Noto Sans', sans-serif;
 }
@@ -249,12 +270,24 @@
     background-image: url("C:\Users\hp\Desktop\React Project\my-app\src\blue.jpg");
     background-size: cover;
 }
+.modiinq{
+    border: 0px solid blue;
+    display: flex;
+    justify-content: center;
+    background-image: url("C:\Users\hp\Desktop\React Project\my-app\src\Signuptodaywalapic.jpg");
+    background-size: cover;
+}
 .modin{
+    border: 0px solid white;
+    display: flex;
+    justify-content: center;
+}
+.modinq{
     border: 0px solid black;
     display: flex;
     justify-content: center;
-
 }
+
 .fv{
     color: red;
 }
@@ -267,12 +300,19 @@
     border: 2px solid red;
 }
 .mami{
-    color: rgb(61, 156, 61); ;
-    font-family: 'Noto Sans', sans-serif;
+    color: #009900;
+    font-family: 'Merriweather', serif;   
+    text-align: center;  
 }
+
 .mamir{
-    color: black;
-    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+.za{
+    background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
 }
 
 

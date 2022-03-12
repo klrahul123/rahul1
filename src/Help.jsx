@@ -3,14 +3,14 @@ import { Row , Col, Container, Button } from 'react-bootstrap';
 
 export default function Help() {
     return (
-      <div>
+      <div className="za">
         <br /> <br />
         
         <Container className="rp">
           <hr />
   <Row>
     <Col sm={12}>
-  <div className="ba">
+  <div className="baf">
      <h2 >Need Instant Help?</h2>
   </div>
   <hr /> <br />
@@ -18,14 +18,15 @@ export default function Help() {
 
   </Row>
   <Row className="rpp">
-    <Col className="rppp" sm={6}><Button variant="success"> <a className="eq" href="/c"> Course Tutorial </a></Button></Col>
-    <Col className="rppp" sm={6}><Button variant="success"> <a  className="eq" href="/"> Knowledge base </a></Button></Col>
+    <Col className="rppp" sm={4}><Button variant="success"> <a className="eq" href="/c"> Course Tutorial </a></Button></Col>
+    <Col className="rppp" sm={4}><Button variant="success"> <a  className="eq" href="/"> Knowledge base </a></Button></Col>
+    <Col className="rppp" sm={4}><Button variant="success"> <a className="eq" href="/"> Back To Home</a></Button></Col>
   </Row> <br /> <br />
   <Row>
     <Col sm={12}>
       <hr />
-    <div className="ba">
-     <h2 >Contact Us</h2>
+    <div className="baf">
+     <h2 >Contact Us:</h2>
   </div> <hr />
    <br />
 

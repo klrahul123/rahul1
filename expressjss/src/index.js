@@ -1,18 +1,27 @@
+const mongoose= require("mongoose");
+const dotenv=require("dotenv");
 const express = require("express");
 const path = require("path");
 const app=express();
 const fs = require('fs');
-//const hbs = require("hbs");
+const hbs = require("hbs");
 
-//const staticPath = path.join(__dirname, "../public");
-//const templatePath = path.join(__dirname, "../templates/views");
-//const partialsPath = path.join(__dirname, "../templates/partials");
-//app.use(express.static(staticPath));
-app.use(express.static(path.join(__dirname, 'build')));
+dotenv.config({path :'./config.env'});
 
-//app.set("view engine", "hbs");
-//app.set("views", templatePath);
-//hbs.registerPartials(partialsPath);
+const PORT= process.env.PORT;
+require('./db/conne');
+//const User= require('./model/userSchema');
+
+
+const staticPath = path.join(__dirname, "../public");
+const templatePath = path.join(__dirname, "../templates/views");
+const partialsPath = path.join(__dirname, "../templates/partials");
+app.use(express.static(staticPath));
+
+
+app.set("view engine", "hbs");
+app.set("views", templatePath);
+hbs.registerPartials(partialsPath);
 
 
 app.get('/', function (req, res) {
@@ -39,6 +48,6 @@ app.get( "*" , (req , res) => {
     });
 });
 
-app.listen(8000, () => {
-    console.log("listening to the port 8000");
+app.listen(PORT, () => {
+    console.log(`listening to the port ${PORT}`);
 });

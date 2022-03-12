@@ -4,17 +4,17 @@ import { Button , Form , Col , Row, Container } from 'react-bootstrap';
 
 export default function Signup() {
     return (
-      <div>
+      <div className="za">
           <br />
-        <Container className='rtpv'>
+        <Container className='rtpvq'>
       <Row className='rubil'>
-      <Col sm={6} className="modiin">
+      <Col sm={6} className="modiinq">  
          
       </Col>
 
-      <Col sm={6} className="modin">
+      <Col sm={6} className="modinq">
       <Form>
-          <h5 className="ron">Sign Up</h5> <br />
+          <h5 className="ron">Sign Up</h5> <hr /> <br />
           <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>First Name</Form.Label>
     <Form.Control type="text" placeholder="Enter Name"  required/>
@@ -44,7 +44,7 @@ export default function Signup() {
     <Form.Check type="checkbox" label="Check me out" required />
   </Form.Group>
   <div className="d-grid gap-2">
-  <Button variant="danger" type="submit" className="et" >
+  <Button variant="danger" type="submit" className="et" onClick={() => alert("Welcome to CODING HUB :)")} >
     Proceed
   </Button>
    </div> <br/>
@@ -54,8 +54,8 @@ export default function Signup() {
       </Col>
       </Row>
       </Container>
-      <hr />
+    
 
-      </div>
+      </div>   
     );
   }

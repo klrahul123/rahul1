@@ -27,26 +27,26 @@ export default function New(){
         <div>
        <Navbar bg="light" expand={false}>
   <Container fluid>
-     <h2 class="mami"> <BsChevronDoubleRight/>CODING HUB </h2>
+     <h2 className="mami"> <BsChevronDoubleRight/>CODING HUB </h2>
     <Navbar.Toggle aria-controls="offcanvasNavbar" />
     <Navbar.Offcanvas
       id="offcanvasNavbar"
       aria-labelledby="offcanvasNavbarLabel"
       placement="end">
     <Offcanvas.Header closeButton>
-        <Offcanvas.Title id="offcanvasNavbarLabel"> <h3 class="mami">Menu</h3></Offcanvas.Title>
+        <Offcanvas.Title id="offcanvasNavbarLabel"> <h3 className="mami">Menu</h3></Offcanvas.Title>
       </Offcanvas.Header>
       <hr /> <hr />
       <Offcanvas.Body>
         <Nav className="justify-content-end flex-grow-1 pe-3"> 
-          <Nav.Link href="/"><h6 class="mamir"><HomeIcon/> Home</h6></Nav.Link>
-          <Nav.Link href="/java"><h6 class="mamir"><CodeIcon/> Java</h6></Nav.Link>
-          <Nav.Link href="/c"><h6 class="mamir"><CodeIcon/> C</h6></Nav.Link>
-          <Nav.Link href="/c++"><h6 class="mamir"><CodeIcon/> C++</h6></Nav.Link>
-          <Nav.Link href="/python"><h6 class="mamir"><CodeIcon/> Pyhton</h6></Nav.Link>
-          <Nav.Link href="/login"><h6 class="mamir"><LoginIcon/> Login</h6></Nav.Link>
-          <Nav.Link href="/signup"> <h6 class="mamir"><AppRegistrationRoundedIcon/> Sign-Up</h6></Nav.Link>
-          <Nav.Link href="/help"> <h6 class="mamir"><HelpIcon/> Help</h6></Nav.Link>
+          <Nav.Link href="/"><h6 className="mamir"><HomeIcon/> Home</h6></Nav.Link>
+          <Nav.Link href="/java"><h6 className="mamir"><CodeIcon/> Java</h6></Nav.Link>
+          <Nav.Link href="/c"><h6 className="mamir"><CodeIcon/> C</h6></Nav.Link>
+          <Nav.Link href="/c++"><h6 className="mamir"><CodeIcon/> C++</h6></Nav.Link>
+          <Nav.Link href="/python"><h6 className="mamir"><CodeIcon/> Pyhton</h6></Nav.Link>
+          <Nav.Link href="/login"><h6 className="mamir"><LoginIcon/> Login</h6></Nav.Link>
+          <Nav.Link href="/signup"> <h6 className="mamir"><AppRegistrationRoundedIcon/> Sign-Up</h6></Nav.Link>
+          <Nav.Link href="/help"> <h6 className="mamir"><HelpIcon/> Help</h6></Nav.Link>
 
         </Nav>
       </Offcanvas.Body>
@@ -56,16 +56,16 @@ export default function New(){
 
       <Router>
       <div> 
-        <div class="spe">
+        <div className="spe">
       <ButtonGroup className="mb-2" size="lg">
-      <Link class="wele" to="/">Home</Link>
-      <Link class="wele" to="/c">C</Link>
-      <Link class="wele" to="/java">Java</Link>
-      <Link class="wele" to="/c++">C++</Link>
-      <Link class="wele" to="/python">Python</Link>
-      <Link class="wele" to="/help">Help</Link>
-      <Link class="weq" to="/login">Login</Link>
-      <Link class="wele" to="/signup">Sign Up</Link>
+      <Link className="wele" to="/">Home</Link>
+      <Link className="wele" to="/c">C</Link>
+      <Link className="wele" to="/java">Java</Link>
+      <Link className="wele" to="/c++">C++</Link>
+      <Link className="wele" to="/python">Python</Link>
+      <Link className="wele" to="/help">Help</Link>
+      <Link className="weq" to="/login">Login</Link>
+      <Link className="wele" to="/signup">Sign Up</Link>
       </ButtonGroup>
       </div>
         <Switch>

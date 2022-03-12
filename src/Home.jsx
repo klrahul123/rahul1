@@ -2,23 +2,23 @@ import * as React from 'react';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './toy.css';
-import { Button , Card , Row , Col, Container ,Offcanvas,Nav, NavDropdown,Form, Navbar, FormControl } from 'react-bootstrap';
+import { Button , Card , Row , Col, Container } from 'react-bootstrap';
 import beautifulblackscreencode from './beautifulblackscreencode.jpg';
 import { FcUp } from "react-icons/fc";
 import DoughnutChartDemo from  './DoughnutChartDemo';
-import { BsChevronDoubleRight } from "react-icons/bs";
+
 
 
 export default function Home() {
     return (
       <>
-    <Container className='rtp'>
+    <Container className='rtp'> 
   <Row className='rubi'>
     <Col sm={6} className="modii">
-        <div class="r"><h2 class="hum">Welcome to <h2 class="rrr">CODING HUB</h2></h2>
-        <p class="hum" > Confused on which course to take? I have got you covered. Browse courses and find out the best course for you.Its free! Programming HUB is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.</p>
-        <a href="/c" class="her"> <Button > Free Courses </Button> </a>
-        <a href="/other" class="her"> <Button variant="dark"> More Info</Button> </a>
+        <div className='r'><h2 class="hum">Welcome to <h2 className="rrr">CODING HUB</h2></h2>
+        <p className="hum" > Confused on which course to take? I have got you covered. Browse courses and find out the best course for you.Its free! Programming HUB is my attempt to teach basics and those coding techniques to people in short time which took me ages to learn.</p>
+        <a href="/c" class="her" onClick={()=>alert("Opening Free Course")}> <Button > Free Courses </Button> </a>
+        <a href="/help" className='her'> <Button variant="dark"> More Info</Button> </a>
         </div>
     </Col>
     <Col sm={6} className="modiz">
@@ -33,7 +33,7 @@ export default function Home() {
   </div>
   <hr />
   <Container className='rtp'>
-  <Row className='rubi' className='v'>
+  <Row className='rubi'>
     <Col sm={6} className="modii">
     <Card className='rubi' style={{ width: '18rem' }}>
   <Card.Img variant="top" src={beautifulblackscreencode} />
@@ -79,7 +79,7 @@ export default function Home() {
 <br /> <br />
 <hr />
   <div className="n">
-     <h2>Other Free Courses</h2>
+     <h2>Other Courses</h2>
   </div>
   <hr />
   
